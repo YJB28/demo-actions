@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  say-hello:
+  say-hello123:
     runs-on: ubuntu-latest
 
     steps:
