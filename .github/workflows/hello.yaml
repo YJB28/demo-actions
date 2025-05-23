@@ -1,0 +1,25 @@
+name: Hello World Workflow1
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Print Hello World2
+        run: echo "Hello, world!"
+
+      - name: Say another message3
+        run: echo "GitHub Actions are running 🚀"
+
+      - name: Show current directory4
+        run: pwd
+
+      - name: List files in repo5
+        run: ls -la
